@@ -11,6 +11,12 @@ else
     echo "No gpu has been assigned."
 fi
 
+if [ "$3" != "" ]; then
+    echo "Scenario is: $3"
+else
+    echo "No scenario has been assigned."
+fi
+
 PROJECT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && cd .. && pwd )"
 SRC_DIR="$PROJECT_DIR/src"
 echo "Project dir: $PROJECT_DIR"
